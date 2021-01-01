@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIP CALCULATOR</title>
+  <link rel="stylesheet" type="text/css" href="tip.css">
+  
+  
+</head>
+<body class="info">
+  <label>Bill Amount</label><br>
+  <input type="text" id="total-bill" placeholder="₹"><br>
+  <label>No of person</label><br>
+  <input type="text" id="total-no" placeholder="₹"><br>
+  <label for="survey1">Service</label><br>
+  <input list="survey" id="survey1" placeholder="₹"></input>
+  <datalist  id="survey">  
+    <option value="0.25">EXCELLENT</option>
+    <option value="0.1">GOOD</option>
+    <option value="0.05">AVERAGE</option>
+    <option value="0.01">WORST</option>
+  </datalist>
+  <br>
+  <button type="submit" id="button" onclick="calculate()">CALCULATE</button>
+  <h3 id="show"> cost per head is <span id="result"></span> for <span id="t_people"></span>person</h3>
+  <script src="tip.js"></script> 
+</body>
+</html>
